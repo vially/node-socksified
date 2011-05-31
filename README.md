@@ -13,7 +13,7 @@
 
 ## Example
 
-    var http = require('socksified').http;
+    var http = require('socksified');
 
     var options = {
       socks_host: '127.0.0.1',

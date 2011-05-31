@@ -3,6 +3,7 @@
   "description": "HTTP SOCKS5 support for node.js",
   "version": "0.0.1",
   "author": "Valentin-Costel Haloiu <vially.ichb@gmail.com>",
+  "repository": "git://github.com/vially/node-socksified",
   "dependencies": {
     "sprintf": ">= 0.1.1",
     "ipv6": ">= 0.0.1"
