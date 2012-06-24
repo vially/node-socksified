@@ -1,1 +1,1 @@
-module.exports = require('./lib/socksified');
+module.exports.SocksAgent = require('./lib/socks_agent');

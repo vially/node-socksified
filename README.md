@@ -13,18 +13,22 @@
 
 ## Example
 
-    var http = require('socksified');
+```js
+var http = require('http');
+var SocksAgent = require('socksified').SocksAgent;
 
-    var options = {
-      socks_host: '127.0.0.1',
-      socks_port: 1080,
-      host: 'www.google.com',
-      port: 80,
-      path: '/'
-    };
+var socksAgent = new SocksAgent({socks_host: '127.0.0.1', socks_port: 1080});
 
-    http.get(options, function(res) {
-      console.log("Got response: " + res.statusCode);
-    }).on('error', function(e) {
-      console.log("Got error: " + e.message);
-    });
+var options = {
+    agent: socksAgent,
+    host: 'www.google.com',
+    port: 80,
+    path: '/'
+};
+
+http.get(options, function(res) {
+    console.log("Got response: " + res.statusCode);
+}).on('error', function(e) {
+    console.log("Got error: " + e.message);
+});
+```
