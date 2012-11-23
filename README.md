@@ -8,6 +8,7 @@
 
 ## TODO
 
+  - Test versions other than Node v0.8.14
   - SOCKS4 support
   - HTTPS support
 
@@ -17,7 +18,10 @@
 var http = require('http');
 var SocksAgent = require('socksified').SocksAgent;
 
-var socksAgent = new SocksAgent({socks_host: '127.0.0.1', socks_port: 1080});
+var socksAgent = new SocksAgent({
+  socks_host: '127.0.0.1',
+  socks_port: 1080
+});
 
 var options = {
     agent: socksAgent,
