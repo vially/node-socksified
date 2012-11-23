@@ -1,7 +1,7 @@
 {
   "name": "socksified",
   "description": "HTTP SOCKS5 support for node.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Valentin-Costel Haloiu <vially.ichb@gmail.com>",
   "repository": "git://github.com/vially/node-socksified",
   "dependencies": {
@@ -13,5 +13,5 @@
   },
   "keywords": ["socks"],
   "main": "index",
-  "engines": { "node": "0.5.x" }
+  "engines": { "node": "0.8.x" }
 }
